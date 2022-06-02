@@ -1,10 +1,6 @@
 import pyqrcode
 import pandas as pd
 
-# text="hii"
-# image=pyqrcode.create(text)
-# image.svg("QR.svg",scale="5")
-
 
 def createQrCode():
     df=pd.read_csv("data2.csv")
