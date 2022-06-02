@@ -12,7 +12,7 @@ cap=cv2.VideoCapture(0)
 names=[]
 
 #function for attendece file
-fob=open('attendence.txt','a+')
+fob=open('adddata.csv','a+')
 def enterData(z):
     if z in names:
         pass
@@ -42,8 +42,10 @@ while True:
 
     cv2.imshow('Frame',frame)
 #close
+# For close the web cam press s
     if cv2.waitKey(1)&0xff==ord('s'):
         cv2.destroyAllWindows()
         break
-
 fob.close()
+
+
